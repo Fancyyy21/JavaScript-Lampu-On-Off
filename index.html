@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        button{
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: lightgreen;
+        }
+    </style>
+    <img src="assets/img/off.gif" alt="" id="lampu1">
+    <h1>CETREKAN LAMPU ANJAY MABAR!!!</h1>
+    <button onclick="saklarhidupinlampu()">NYALAKAN LAMPU</button>
+    <button onclick="saklarmatiinlampu()">MATIKAN LAMPU</button>
+
+
+
+    <!-- INI ADALAH SCRIPT -->
+
+    <script>
+        function saklarhidupinlampu() {
+            console.log('testing saklar hidupin');
+            let lampu1 = document.getElementById("lampu1");
+            console.log(lampu1.src);
+            lampu1.src = 'assets/img/on.gif'
+
+            
+        }
+
+        function saklarmatiinlampu() {
+            console.log('testing saklar matiin');
+            let lampu1 = document.getElementById("lampu1");
+            console.log(lampu1.src);
+            lampu1.src = 'assets/img/off.gif'
+        }
+    </script>
+</body>
+</html>
